@@ -80,10 +80,10 @@ whereIsU(argue)
 function firstU(str){
   challengeBanner(6);
   let i = 0;
-  let us = '';
+  let us = [];
   const len = str.length;
   while (i < len){
-    if(str[i] === 'u'){us = us + i}
+    if(str[i] === 'u'){us = us.concat(i)}
     i++;
   }
   console.log(us[0]);
@@ -94,13 +94,13 @@ firstU(argue)
 function uOrNothing(str){
   challengeBanner(7);
   let i = 0;
-  let us = '';
+  let us = [];
   const len = str.length;
   while (i < len){
-    if(str[i] === 'u'){us = us + i}
+    if(str[i] === 'u'){us = us.concat(i)}
     i++;
   }
-  if(us === ''){console.log(-1);}
+  if(us.length === 0){console.log(-1);}
   else {console.log(us[0]);}
 }
 
