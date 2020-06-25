@@ -100,8 +100,8 @@ function uOrNothing(str){
     if(str[i] === 'u'){us = us.concat(i)}
     i++;
   }
-  if(us.length === 0){console.log(-1);}
-  else {console.log(us[0]);}
+  us = us.concat(-1);
+  console.log(us[0]);
 }
 
 uOrNothing(argue)
